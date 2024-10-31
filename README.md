@@ -1,2 +1,3 @@
 # bookbot
-Course 4 - Py Bookbot
+
+BookBot is my first project!
