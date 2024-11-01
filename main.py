@@ -1,7 +1,12 @@
 import string
+import sys
 
 def main():
-    book_path = "books/frankenstein.txt"
+    if len(sys.argv) < 2:
+        print("Error: No book specified when running command")
+        sys.exit(1)
+    # old_book_path = "books/frankenstein.txt"
+    book_path = sys.argv[1]
     text = book_contents(book_path)
     word_count = count_words(text)
     char_count = count_characters(text)
